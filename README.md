@@ -1,0 +1,1 @@
+# Large-scale-Functional-Annotation-of-Prokaryotic-Genes-using-Protein-Language-Models---TFG
