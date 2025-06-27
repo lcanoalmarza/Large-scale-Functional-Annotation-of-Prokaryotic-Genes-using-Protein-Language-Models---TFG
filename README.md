@@ -36,11 +36,26 @@ Note that, to use ProstT5 model instead of ProtT5, transformer name should be ap
 Where ```embeddings/``` is the folder storing per-protein embeddings computed by ProstT5
 
 (5) Propper formatting of labels 
+<pre> python prepare_labels.py -input UMAP_reduction.npz --reference non_red_input_sequences.dat</pre>
 
+This will generate ```labels_ko.csv``` file suitable for training.
 
 (4) Train KOPNet
-<pre> python kos_nn.py --samples --labels -s -e 3 -l 0.01 -n 100 400 1600 4000 6000 </pre>
+<pre> python kos_nn.py --samples UMAP_reduction.npy --labels labels_ko.csv -s -e 3 -l 0.01 -n 100 400 1600 4000 6000 </pre>
+
+Where: 
+    ```-s```: shuffles data instances to make neural network learning independent of data order
+    ```-e```: number of epochs for training
+    ```-l```: learning rate
+    ```-n```: each value defines number of neurons in the fully-connected layer of that layer's block
 
 ### Predict KO terms using KOPNet-pipeline
 
+(1) Per-protein embedding computing for target proteins (analogously to embedding computing in training)
+
+(2) Target protein reduction within UMAP model
+<pre> sample_UMAP_reduction.py --sample sample_embeddings/ --output reduced_sample </pre>
+
+(3) Run KOPNet KO prediction 
+<pre> python predict_ko.py --reduced_sample reduced_sample.npy --sample_ids reduced_sample_sample_ids.txt --output KOPNet_annotation.tsv </pre>
 
