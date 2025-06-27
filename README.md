@@ -8,6 +8,8 @@ traditional, homology-based methods. To achieve this objective, we provide here 
 develop the KOPNet-pipeline, a new bioinformatics workflow to predict KEGG KO functional terms based 
 on the comparison of protein embeddings derived from ProsT5 model available at https://github.com/mheinzinger/ProstT5. 
 
+![KOPNet-pipeline](KOPNet_pipeline.drawio.svg)
+
 This project was developed as Final Bachelor Thesis (Trabajo Fin de Grado, TFG) for the Biotechnology
 Degree at Universidad Politécnica de Madrid (UPM).
 
