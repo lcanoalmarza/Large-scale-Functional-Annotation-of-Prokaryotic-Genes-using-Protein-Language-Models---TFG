@@ -13,11 +13,15 @@ on the comparison of protein embeddings derived from ProsT5 model available at h
 This project was developed as Final Bachelor Thesis (Trabajo Fin de Grado, TFG) for the Biotechnology
 Degree at Universidad Politécnica de Madrid (UPM).
 
-### Important information about heavy files
+### Important information about heavy files and hardware resources
 
 Some of the files generated during the training of KOPNet—the neural network underlying KO prediction in this pipeline—are too large to be published in this GitHub repository. 
-
 If you would like to access these files, please send an email to: **laura.cano@alumnos.upm.es**
+
+To run this pipeline you must have access to GPU facilities as well as high memory nodes. In our case we used:
+    - Quad CPU Xeon G6230, 80 CPU cores, 1,5 T RAM for UMAP reduction
+    - NVIDIA® A100, 32 CPU cores, 125G RAM, 41G vRAM, 2 x SSD 447.1G for KOPNet training
+    - NVIDIA® TESLA V100, 40 CPU cores, 188G RAM, 16G vRAM, SSD 222.6G for KOPNet KO predictions
 
 ### KOPNet training
 
