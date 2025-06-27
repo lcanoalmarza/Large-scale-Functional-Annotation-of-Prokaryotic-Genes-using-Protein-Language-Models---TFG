@@ -1,1 +1,10 @@
+# CONTENTS OF THIS `KOPNet_prediction` FOLDER
 
+This folder contains scripts used to run KOPNet functional prediction on the FESNov database, available at [https://novelfams.cgmlab.org/](https://novelfams.cgmlab.org/).
+
+It includes:
+
+1. `sample_UMAP_reduction.py`  
+2. `predict_ko.py`
+
+To reproduce the complete pipeline, additional files generated during model training are required. However, due to their large size, they are not included in this GitHub repository. If you would like access to these files, please contact: **laura.cano@alumnos.upm.es**
