@@ -6,7 +6,7 @@ The goal of this project is to develop an AI-based bioinformatics framework for 
 scalably predicting the function of microbial sequences that are too divergent to be annotated with 
 traditional, homology-based methods. To achieve this objective, we provide here the scripts used to
 develop the KOPNet-pipeline, a new bioinformatics workflow to predict KEGG KO functional terms based 
-on the comparison of protein embeddings derived from ProsT5 model available at https://github.com/mheinzinger/ProstT5. 
+on the comparison of protein embeddings derived from ProsTT5 model available at https://github.com/mheinzinger/ProstT5. 
 
 ![KOPNet-pipeline](KOPNet_pipeline.drawio.svg)
 
