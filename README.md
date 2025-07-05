@@ -18,10 +18,17 @@ Degree at Universidad Politécnica de Madrid (UPM).
 Some of the files generated during the training of KOPNet—the neural network underlying KO prediction in this pipeline—are too large to be published in this GitHub repository. 
 If you would like to access these files, please send an email to: **laura.cano@alumnos.upm.es**
 
-To run this pipeline you must have access to GPU facilities as well as high memory nodes. In our case we used:
-    - Quad CPU Xeon G6230, 80 CPU cores, 1,5 T RAM for UMAP reduction
-    - NVIDIA® A100, 32 CPU cores, 125G RAM, 41G vRAM, 2 x SSD 447.1G for KOPNet training
-    - NVIDIA® TESLA V100, 40 CPU cores, 188G RAM, 16G vRAM, SSD 222.6G for KOPNet KO predictions
+To run this pipeline, you must have access to GPU facilities as well as high-memory nodes. In our case, we used:
+
+- **Quad CPU Xeon G6230**  
+  80 CPU cores, 1.5 TB RAM — for UMAP reduction
+
+- **NVIDIA® A100**  
+  32 CPU cores, 125 GB RAM, 41 GB vRAM, 2 × SSD (447.1 GB) — for KOPNet training
+
+- **NVIDIA® TESLA V100**  
+  40 CPU cores, 188 GB RAM, 16 GB vRAM, SSD (222.6 GB) — for KOPNet KO predictions
+
 
 ### KOPNet training
 
