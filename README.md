@@ -25,7 +25,7 @@ To run this pipeline you must have access to GPU facilities as well as high memo
 
 ### KOPNet training
 
-(1) Remove proteins with 100% identity using CD-HIT
+(1) Remove proteins with 100% identity using CD-HIT (https://github.com/weizhongli/cdhit)
 
 <pre> cd-hit -i input_sequences.fa -o non_red_sequences -c 1 -d 0 -n 5 -M 160000 -T 8 </pre>
 
